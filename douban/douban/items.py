@@ -5,15 +5,10 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-from scrapy.item import Item,Field
+import scrapy
 
-class TestscrapyItem(Item):
+
+class DoubanItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
-
-class DmozItem(Item):
-    title = Field()
-    link = Field()
-    desc = Field()
     pass
