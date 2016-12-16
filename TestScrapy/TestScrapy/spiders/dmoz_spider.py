@@ -16,4 +16,5 @@ class DmozSpider(scrapy.Spider):
             item['link'] = sel.xpath('div[@class="title-and-desc"]/a/@href').extract()
             item['desc'] = sel.xpath('//div[@class="site-descr"]/text()').extract()
 
+
             yield item
